@@ -1,0 +1,289 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+}
+
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+#wrapper
+{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/***** W3-CSS MODS *****/
+.spacer
+{
+  height: 50px;
+  width: 50px;
+}
+
+/***** NAVIGATION *****/
+@media (max-width: 1024px) {
+  #desktop-nav-bar { display: none !important; }
+  #mobile-nav-bar { display: block !important; }
+}
+
+#desktop-nav-bar
+{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 0.5px 7px grey;
+}
+
+#desktop-nav-bar ul
+{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+#desktop-nav-bar ul li
+{
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+#desktop-nav-bar ul li a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #5c5b5b;
+}
+
+#mobile-nav-bar
+{
+  height: 60px !important;
+  padding: 0px;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0.5px 7px grey;
+}
+
+/********************** INHALT *********************/
+.section_content
+{
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  width: 90%;
+}
+
+/*** INFO ***/
+#cardholder
+{
+  padding: 0 0 100px 0;
+}
+
+.info-cards
+{
+  box-shadow: none !important;
+  border: 3px solid rgb(58, 58, 58);
+}
+
+/*** FORM ***/ 
+#quiz-container
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quiz-antwort
+{
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid #555555;
+  background-color: #e2efff;
+  transition: all 250ms ease-out;
+}
+
+#center-of-attention
+{
+  width: 100%; 
+  height: 100%; 
+  margin: 0px 0px 0px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#center-of-attention input
+{
+  display: none;
+}
+
+#antwort-button
+{
+  margin-top: 20px;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  color: green;
+  font-size: 20px;
+  border: 3px solid green;
+  background-color: #EDEDED;
+  transition: all 350ms ease-out;
+  cursor: pointer;
+}
+
+#antwort-button:hover
+{
+  background-color: green;
+  color: white;
+}
+
+#center-of-attention input:checked + .quiz-antwort 
+{
+  color: white;
+  background-color: rgb(134, 70, 255);
+}
+
+#center-of-attention h1
+{
+  display: block;
+  font-size: 20px;
+}
+
+#form-container
+{
+  text-align: center;
+}
+
+.input_text
+{
+  display: inline-block !important;
+  text-align: center;
+  font-size: 20px;
+}
+
+#zusttimmungs-label
+{
+  padding: 7px 0 10px 0;
+}
+
+#resultate
+{
+  margin: 0 auto;
+  width: 300px;
+  font-size: 14px;
+  border: 3px solid grey;
+}
+
+#resultate thead, tbody 
+{ 
+  display: block; 
+}
+
+#resultate tbody 
+{
+  height: 40vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*** PHP-File ***/
+#php-titel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#php-link
+{
+  text-decoration: none;
+  padding: 10px;
+  color: green;
+  font-size: 20px;
+  border: 3px solid green;
+  background-color: #EDEDED;
+  transition: all 350ms ease-out;
+  cursor: pointer;
+}
+
+#php-link:hover
+{
+  background-color: green;
+  color: white;
+}
+
+/*** CANVAS ***/
+canvas
+{
+  margin: auto;
+}
+
+#abschiedstext
+{
+  font-size: 14px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/********************** ANIMATIONEN *****/
+#desktop-nav-bar ul li a:hover
+{
+  color: #35b8ad;
+  text-shadow: 0px 0px 2px;
+}
+
+.input_text:hover
+{
+  background-color: #CDDCDD;
+}
+.input_text:focus
+{
+  background-color: #CCCCEE;
+}
+
+/***** SECTIONS *****/
+section
+{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+section#info
+{
+  overflow: auto;
+  background-color: #fff;
+}
+section#php-form
+{
+  background-color: #eef;
+}
+
+section#my-canvas
+{
+  background-color: #efe;
+}

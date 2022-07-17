@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Richis Computer-Service</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body">
+<div id="wrapper">
+  <!----------------------- Desktop-Navigation -->
+  <nav id="desktop-nav-bar">
+    <ul>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#php-form">Form</a></li>
+      <li><a href="#my-canvas">Canvas</a></li>
+    </ul>
+  </nav>
+
+  <!---------------------- Mobile-Navigation -->
+  <nav id="mobile-nav-bar">
+    <div id="side-nav" class="w3-sidebar w3-card w3-bar-block w3-border-right" style="display:none;">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+      <a href="#info" class="w3-bar-item w3-button" onclick="w3_close()">Info</a>
+      <a href="#php-form" class="w3-bar-item w3-button" onclick="w3_close()">Form</a>
+      <a href="#my-canvas" class="w3-bar-item w3-button" onclick="w3_close()">Canvas</a>
+    </div>
+
+    <div class="w3-display-top" style="margin: 0px">
+      <button id="side-nav-button" class="w3-button w3-left w3-large" onclick="w3_open()">☰</button>
+      <h1 class="w3-large w3-center">Richis PC-Service</h1>
+    </div>
+  </nav>
+
+  <!---------------------- Info -->
+  <section id="info">
+
+    <div class="section_content">
+
+      <h1>Richis Computer Service</h1>
+      <h4>Mein Angebot</h4>
+
+      <div id="cardholder" class="w3-container w3-cell-row">
+
+        <div class="info-cards w3-card-4 w3-cell w3-mobile" style="width:30%">
+          <img src="img/bild1.jpg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Richi baut Ihnen einen massgeschneiderten PC, ganz nach Ihren Wünschen!</p>
+          </div>
+        </div>
+
+        <div class="w3-cell w3-mobile spacer"></div>
+
+        <div class="info-cards w3-card-4 w3-cell w3-mobile" style="width:30%">
+          <img src="img/bild2.jpg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Richi wartet und repariert Ihren PC mit leichtigkeit!</p>
+          </div>
+        </div>
+
+        <div class="w3-cell w3-mobile spacer"></div>
+
+        <div class="info-cards w3-card-4 w3-cell w3-mobile" style="width:30%">
+          <img src="img/bild3.jpg" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Richi wäscht Ihren PC bis er glitzert und glänzt!</p>
+          </div>
+        </div>
+      </div>
+      <div id="info-text">
+        <p>Erkunden Sie meine Seite und machen Sie das Quiz, um Ihre Computerkenntnisse auf die Probe zu stellen!<br />
+          Bei Kontaktanfragen oder sonstigen Computerangelegenheiten stehe ich Ihnen gerne unter richard.minder@stud.hslu.ch zur Verfügung!</p>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------- Formular -->
+  <section id="php-form">
+    <div id="center-of-attention">
+    </div>
+  </section>
+
+  <!---------------------- Canvas -->
+  <section id="my-canvas">
+    <h2 id="abschiedstext" class="w3-mobile">Dieses Webprojekt wurde Ihnen präsentiert von</h2>
+    <canvas id="richis-canvas" width="450" height="450"></canvas>
+  </section>
+</div>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
