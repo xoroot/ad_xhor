@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+
+# A handy little fella to make things faster
+# Planning on adding multi-os compatibility in the future
+# On MacOS, compile with macho64 instead of elf64
+# ~XHOR
+
 import os
 import sys
 
